@@ -487,7 +487,15 @@ namespace StressDataAnalyzer
             if (dateRangeSpecified || temperatureRangeSpecified || appliedStressRangeSpecified || deflectionRangeSpecified)
             {
                 // TODO - Complete the BuildLambdaExpressionForQueryCriteria method.
+
+                Type testResultType = typeof(TestResult);
+                Expressions.ParameterExpression itemBeingQueried =
+                Expressions.Expression.Parameter(testResultType, "item");
                 // Create the expression that defines the parameter for the 
+                Expressions.BinaryExpression dateCondition = null;
+                Expressions.BinaryExpression temperatureCondition = null;
+                Expressions.BinaryExpression appliedStressCondition = null;
+                Expressions.BinaryExpression deflectionCondition = null;
                 // lambda expression.
                 // The type is TestResult, and the lambda expression refers to
                 // it with the name "item".
@@ -498,11 +506,26 @@ namespace StressDataAnalyzer
                 // that the user specifies.
                 // These method calls may return null if the user did not 
                 // specify criteria for a property.
-
+                dateCondition = BuildDateExpressionBody(
+ dateRangeSpecified, startDate, endDate,
+ testResultType, itemBeingQueried);
+                temperatureCondition = BuildNumericExpressionBody(
+ temperatureRangeSpecified, fromTemperature, toTemperature,
+ testResultType, "Temperature", itemBeingQueried);
+                appliedStressCondition = BuildNumericExpressionBody(
+ appliedStressRangeSpecified, fromStressRange, toStressRange,
+ testResultType, "AppliedStress", itemBeingQueried);
+                deflectionCondition = BuildNumericExpressionBody(
+ deflectionRangeSpecified, fromDeflection, toDeflection,
+ testResultType, "Deflection", itemBeingQueried);
                 // Combine the Boolean expressions together into a single body.
-
+                Expressions.Expression body = BuildLambdaExpressionBody(
+ dateCondition, temperatureCondition,
+ appliedStressCondition, deflectionCondition);
                 // Build the lambda expression using the parameter and the 
                 // body expressions.
+                lambda = Expressions.Expression.Lambda<Func<TestResult, bool>>(
+ body, itemBeingQueried);
             }
 
             // Return the lambda expression. If the user did not specify any criteria this value will be null.
@@ -548,14 +571,28 @@ namespace StressDataAnalyzer
                 //
                 //    item.TestDate >= startDate
                 //
-
+                MemberInfo testDateProperty =
+ testResultType.GetProperty("TestDate");
+                Expressions.MemberExpression testDateMember =
+ Expressions.Expression.MakeMemberAccess(
+ itemBeingQueried, testDateProperty);
+                Expressions.ConstantExpression lowerDate =
+Expressions.Expression.Constant(startDate);
+                Expressions.BinaryExpression lowerDateCondition =
+ Expressions.Expression.GreaterThanOrEqual(
+ testDateMember, lowerDate);
                 // Generate the expression:
                 //
                 //    item.Testdate <= endDate
                 //
-
+                Expressions.ConstantExpression upperDate =
+ Expressions.Expression.Constant(endDate);
+                Expressions.BinaryExpression upperDateCondition =
+                Expressions.Expression.LessThanOrEqual(
+                testDateMember, upperDate);
                 // Combine the expressions with the && operator.
-
+                dateCondition = Expressions.Expression.AndAlso(
+ lowerDateCondition, upperDateCondition);
             }
 
             // Return the expression.
@@ -603,14 +640,30 @@ namespace StressDataAnalyzer
                 //
                 //    item.<Property> >= lowerRange
                 //
-
+                MemberInfo testProperty =
+ testResultType.GetProperty(propertyName);
+                Expressions.MemberExpression testMember =
+                Expressions.Expression.MakeMemberAccess(
+                itemBeingQueried, testProperty);
+                Expressions.ConstantExpression lowerValue =
+                Expressions.Expression.Constant(lowerRange);
+                Expressions.BinaryExpression lowerValueCondition =
+                Expressions.Expression.GreaterThanOrEqual(
+                testMember, lowerValue);
                 // Generate the expression:
                 //
                 //    item.<Property> <= upperRange
                 //
+                Expressions.ConstantExpression upperValue =
+Expressions.Expression.Constant(upperRange);
+                Expressions.BinaryExpression upperValueCondition =
+                Expressions.Expression.LessThanOrEqual(
+                testMember, upperValue);
 
                 // Combine the expressions with the && operator.
-
+                booleanCondition =
+ Expressions.Expression.AndAlso(
+ lowerValueCondition, upperValueCondition);
             }
 
             // Return the expression.
@@ -644,12 +697,50 @@ namespace StressDataAnalyzer
             // Combine the expressions together into the body of the lambda expression.
             // Start with the dateCondition expression.
             Expressions.Expression body = null;
-
+            if (dateCondition != null)
+            {
+                body = dateCondition;
+            }
             // Add the temperatureCondition expression.
-
+            if (temperatureCondition != null)
+            {
+                if (body == null)
+                {
+                    body = temperatureCondition;
+                    
+                }
+                else
+                {
+                    body = Expressions.Expression.AndAlso(
+                    body, temperatureCondition);
+                }
+            }
             // Repeat the same logic for the remaining condition expressions.
+            if (appliedStressCondition != null)
+            {
+                if (body == null)
+                {
+                    body = appliedStressCondition;
+                }
+                else
+                {
+                    body = Expressions.Expression.AndAlso(
+                    body, appliedStressCondition);
+                }
+            }
 
-
+            if (deflectionCondition != null)
+ {
+                if (body == null)
+                {
+                    body = deflectionCondition;
+                }
+                else
+                {
+                    body = Expressions.Expression.AndAlso(
+                    body, deflectionCondition);
+                }
+            }
             // If the user specified no conditions, set the body to the constant expression True.
             // NOTE: This case should not happen if this method is called correctly.
             //       It has been added to provide additional safety.
@@ -686,14 +777,17 @@ namespace StressDataAnalyzer
                 // The type is TestResult, and the lambda expression refers to 
                 // it with the name "item".
                 // TODO - Create the type reference and ParameterExpression in the BuildLambdaExpressionForOrderBy method 
-
+                Type testResultType = typeof(TestResult);
+                Expressions.ParameterExpression itemBeingQueried =
+                Expressions.Expression.Parameter(testResultType, "item");
                 // Create the expression that will define the sort key that
                 // the lambda expression returns.
                 // This expression will reference one of the properties in the
                 // TestResult structure depending on the key that the user
                 // specifies.
                 // TODO - Create a MemberExpression and MemberInfo object
-
+                Expressions.MemberExpression sortKey = null;
+                MemberInfo property = null;
                 // TODO - Evaluate the orderByKey parameter to determine the property to sort by
                 // If the user selected the date column, set the property object
                 // to TestDate.
@@ -703,18 +797,44 @@ namespace StressDataAnalyzer
                 // object to AppliedStress.
                 // If the user selected the deflection column,set the property 
                 // object to Deflection.
-
+                switch (orderByKey)
+                {
+                    case OrderByKey.ByDate:
+                        // If the user selected the date column, set the property 
+                        // object to TestDate. 
+                        property = testResultType.GetProperty("TestDate");
+                        break;
+                    case OrderByKey.ByTemperature:
+                        // If the user selected the temperature column, set the 
+                        // property object to Temperature. 
+                        property = testResultType.GetProperty("Temperature");
+                        break;
+                    case OrderByKey.ByAppliedStress:
+                        // If the user selected the applied stress column, set the 
+                        // property object to AppliedStress. 
+                        property = testResultType.GetProperty("AppliedStress");
+                        break;
+                    case OrderByKey.ByDeflection:
+                        // If the user selected the deflection column, set the 
+                        // property object to Deflection. 
+                        property = testResultType.GetProperty("Deflection");
+                        break;
+                }
                 // Construct an Expression that specifies the value in the field 
                 // that the property object references in the TestResult object.
                 // TODO - Construct the expression that specifies the OrderBy field
-
+                sortKey = Expressions.Expression.MakeMemberAccess(
+ itemBeingQueried, property);
                 // Cast the sortKey object to a ValueType object (ValueType is the 
                 // ancestor of all value types, including DateTime and short)
                 // TODO - Create a UnaryExpression object to convert the sortKey object to a ValueType
-
+                Expressions.UnaryExpression convert =
+ Expressions.Expression.Convert(sortKey, typeof(ValueType));
                 // Build the lambda expression by using the parameter and the 
                 // expression that contains the sort key
                 // TODO - Create the OrderBy lambda expression 
+                lambda = Expressions.Expression.Lambda
+ <Func<TestResult, ValueType>>(convert, itemBeingQueried);
             }
 
             // Return the lambda expression

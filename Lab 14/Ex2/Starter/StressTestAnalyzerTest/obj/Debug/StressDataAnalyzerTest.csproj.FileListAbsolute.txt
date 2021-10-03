@@ -81,3 +81,6 @@ D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Starter\StressTestAnalyzerTest\obj\De
 D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Starter\StressTestAnalyzerTest\obj\Debug\StressDataAnalyzerTest.csproj.CopyComplete
 D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Starter\StressTestAnalyzerTest\obj\Debug\StresTestAnalyzerTest.dll
 D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Starter\StressTestAnalyzerTest\obj\Debug\StresTestAnalyzerTest.pdb
+C:\Users\stasd\OneDrive\Рабочий стол\Васильчиков_DotNET\C#\Labfiles\Lab 14\Ex2\Starter\StressTestAnalyzerTest\obj\Debug\StressDataAnalyzerTest.csprojAssemblyReference.cache
+C:\Users\stasd\OneDrive\Рабочий стол\Васильчиков_DotNET\C#\Labfiles\Lab 14\Ex2\Starter\StressTestAnalyzerTest\obj\Debug\StresTestAnalyzerTest.dll
+C:\Users\stasd\OneDrive\Рабочий стол\Васильчиков_DotNET\C#\Labfiles\Lab 14\Ex2\Starter\StressTestAnalyzerTest\obj\Debug\StresTestAnalyzerTest.pdb
