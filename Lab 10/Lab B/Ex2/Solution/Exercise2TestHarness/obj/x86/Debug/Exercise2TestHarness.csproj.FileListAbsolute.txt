@@ -1,0 +1,10 @@
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\bin\Debug\Exercise2TestHarness.exe.config
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\bin\Debug\Exercise2TestHarness.exe
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\bin\Debug\Exercise2TestHarness.pdb
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\bin\Debug\Exercise2.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\bin\Debug\Exercise2.pdb
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\obj\x86\Debug\Exercise2TestHarness.csprojAssemblyReference.cache
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\obj\x86\Debug\Exercise2TestHarness.csproj.CoreCompileInputs.cache
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\obj\x86\Debug\Exercise2TestHarness.csproj.CopyComplete
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\obj\x86\Debug\Exercise2TestHarness.exe
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Exercise2TestHarness\obj\x86\Debug\Exercise2TestHarness.pdb

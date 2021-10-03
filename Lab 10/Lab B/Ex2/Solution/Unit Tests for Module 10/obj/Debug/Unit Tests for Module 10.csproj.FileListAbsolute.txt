@@ -1,0 +1,11 @@
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\bin\Debug\Unit Tests for Module 10.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\bin\Debug\Unit Tests for Module 10.pdb
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\bin\Debug\Exercise2.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\bin\Debug\Exercise2.pdb
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\obj\Debug\Unit Tests for Module 10.csprojAssemblyReference.cache
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\obj\Debug\Unit Tests for Module 10.csproj.CoreCompileInputs.cache
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\obj\Debug\Unit Tests for Module 10.csproj.CopyComplete
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\obj\Debug\Unit Tests for Module 10.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab B\Ex2\Solution\Unit Tests for Module 10\obj\Debug\Unit Tests for Module 10.pdb

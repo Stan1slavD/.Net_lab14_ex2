@@ -1,0 +1,9 @@
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\bin\Debug\MeasuringDevice.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\bin\Debug\MeasuringDevice.pdb
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\bin\Debug\DeviceController.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\bin\Debug\DeviceController.pdb
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\obj\x86\Debug\MeasuringDevice.csprojAssemblyReference.cache
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\obj\x86\Debug\MeasuringDevice.csproj.CoreCompileInputs.cache
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\obj\x86\Debug\MeasuringDevice.csproj.CopyComplete
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\obj\x86\Debug\MeasuringDevice.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\MeasuringDevice\obj\x86\Debug\MeasuringDevice.pdb

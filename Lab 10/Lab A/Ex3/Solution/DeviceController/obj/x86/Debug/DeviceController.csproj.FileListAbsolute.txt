@@ -1,0 +1,5 @@
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\DeviceController\bin\Debug\DeviceController.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\DeviceController\bin\Debug\DeviceController.pdb
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\DeviceController\obj\x86\Debug\DeviceController.csproj.CoreCompileInputs.cache
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\DeviceController\obj\x86\Debug\DeviceController.dll
+G:\Proba_VS_2017\10266\Labfiles\Lab 10\Lab A\Ex3\Solution\DeviceController\obj\x86\Debug\DeviceController.pdb

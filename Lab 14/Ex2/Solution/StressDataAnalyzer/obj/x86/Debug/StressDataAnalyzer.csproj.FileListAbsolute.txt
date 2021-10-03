@@ -1,0 +1,15 @@
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\DataAnalyzer.baml
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\DataAnalyzer.g.cs
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\App.g.cs
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer_MarkupCompile.cache
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.g.resources
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.Properties.Resources.resources
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.csproj.GenerateResource.cache
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.csproj.CoreCompileInputs.cache
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\bin\Debug\StressDataAnalyzer.exe.config
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\bin\Debug\StressDataAnalyzer.exe
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\bin\Debug\StressDataAnalyzer.pdb
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.csprojAssemblyReference.cache
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.csproj.CopyComplete
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.exe
+D:\Proba_VS_2017\10266\Labfiles\Lab 14\Ex2\Solution\StressDataAnalyzer\obj\x86\Debug\StressDataAnalyzer.pdb
